@@ -1,0 +1,97 @@
+.about{
+    position: relative;
+    background-color: $dark;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    padding-bottom: 50px;
+    &__background{
+        z-index: 0;
+        &-star{
+            position: absolute;
+            top: 177px;
+            right: -122px;
+            z-index: 0;
+        }
+        &-smalstar_1{
+            position: absolute;
+            top: 770px;
+            left: 25px;
+        }
+        &-smalstar_2{
+            position: absolute;
+            top: 822px;
+            left: 40px;
+        }
+    }
+    &__heading{
+        padding-top: 94px;
+        color: $light;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__description{
+        padding-top: 24px;
+        color: $light;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__items{
+        padding-top: 72px;
+        display: grid;
+        column-gap: 32px;
+        grid-template-columns: repeat(12,1fr);
+    }
+    &__item{
+        z-index: 1;
+        grid-column: span 4;
+        background: $light;
+        border-radius: 30px;
+        height: 473px;
+        transition: transform .2s;
+        &:nth-child(2n){
+            height: 512px;
+        }
+        &:nth-child(5n){
+            margin-top: 39px;;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__img{
+        height: 314px;
+    }
+    &__label{
+        margin-left: 32px;
+        margin-top: 32px;
+        width: 108px;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__item-name{
+        margin-left: 32px;
+        margin-top: 16px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}

@@ -2,7 +2,6 @@ $dark:#202027;
 $gdark:#BCEC30;
 $glight:#E1FF8F;
 $light:#FFFFFF;
-
 *{
     padding: 0;
     margin: 0;
@@ -10,50 +9,17 @@ $light:#FFFFFF;
 a {
     text-decoration: none;
 }
-.top{
-    height: 800px;
-    background-color: $glight;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-    &__heading {
-        padding-top: 196px;
+.footer{
+    height: 150px;
+    background: $gdark;
+    &__information{
         color: $dark;
-        font-family: Montserrat;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    &__description{
-        padding-top: 24px;
-        color: rgb(32, 32, 39);
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    &__form{
-        padding-top: 48px;
-    }
-    &__button{
-        width: 247px;
-        height: 66px;
-        box-sizing: border-box;
-        border: 1px solid rgb(32, 32, 39);
-        border-radius: 60px;
-        background: $dark;
-        color: $light;
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 600;
         text-align: center;
-        &:hover{
-            background: $light;
-            color: $dark;
-        }
+        padding-top: 60px;
 
     }
 }
+@import 'top', 'about'

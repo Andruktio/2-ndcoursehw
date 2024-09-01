@@ -1,0 +1,100 @@
+.top{
+    position: relative;
+    height: 800px;
+    background-color: $glight;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    &__background{
+        &-small-star_1{
+            position: absolute;
+            top: 94px;
+            left: 63px;
+        }
+        &-small-star_2{
+            position: absolute;
+            top: 69px;
+            left: 156px;
+        }
+        &-small-star_3{
+            position: absolute;
+            top: 538px;
+            left: 948px;
+        }
+        &-small-star_4{
+            position: absolute;
+            top: 568px;
+            left: 1013px;
+        }
+        &-big-star{
+            position: absolute;
+            top: -258px;
+            left: 1025px;
+        }
+        &-border_1{
+            position: absolute;
+            top: -10px;
+            left: 854px;
+        }
+        &-border_2{
+            position: absolute;
+            top: 254px;
+            left: 1067px;
+        }
+        &-border_3{
+            position: absolute;
+            top: 379px;
+            left: 1225px;
+        }
+        &-border_4{
+            position: absolute;
+            top: 663px;
+            left: 1345px;
+        }
+        &-triangle{
+            position: absolute;
+            top: 468px;
+            left: 1247px;
+        }
+    }
+    &__heading {
+        padding-top: 196px;
+        color: $dark;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__description{
+        padding-top: 24px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__form{
+        padding-top: 48px;
+    }
+    &__button{
+        width: 247px;
+        height: 66px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: $dark;
+        color: $light;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        &:hover{
+            background: $light;
+            color: $dark;
+        }
+
+    }
+}
