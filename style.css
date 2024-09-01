@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  height: 800px;
+  background-color: #E1FF8F;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+.top__heading {
+  padding-top: 196px;
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.top__description {
+  padding-top: 24px;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.top__form {
+  padding-top: 48px;
+}
+.top__button {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: #202027;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.top__button:hover {
+  background: #FFFFFF;
+  color: #202027;
+}/*# sourceMappingURL=style.css.map */
