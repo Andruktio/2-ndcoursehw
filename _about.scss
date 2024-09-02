@@ -1,4 +1,5 @@
 .about{
+    overflow-x: hidden;
     position: relative;
     background-color: $dark;
     padding-left: calc(50% - 600px);
@@ -8,16 +9,16 @@
         z-index: 0;
         &-star{
             position: absolute;
-            top: 177px;
-            right: -122px;
+            top: 77px;
+            left: 993px;
             z-index: 0;
         }
-        &-smalstar_1{
+        &-smalstar1{
             position: absolute;
             top: 770px;
             left: 25px;
         }
-        &-smalstar_2{
+        &-smalstar2{
             position: absolute;
             top: 822px;
             left: 40px;
@@ -71,6 +72,7 @@
     }
     &__label{
         margin-left: 32px;
+        margin-right: 32px;
         margin-top: 32px;
         width: 108px;
         border-radius: 52.58px;
@@ -84,6 +86,7 @@
         text-align: center;
     }
     &__item-name{
+        margin-right: 32px;
         margin-left: 32px;
         margin-top: 16px;
         color: rgb(32, 32, 39);
