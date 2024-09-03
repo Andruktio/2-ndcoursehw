@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="hw-2.js"></script>
     <section class="top">
          <div class="top__background">
             <svg class="top__background-small-star1" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,6 +25,10 @@
             <svg class="top__background-small-star4" width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M41.5 1.44077L52.2398 30.4648L52.3196 30.6804L52.5352 30.7602L81.5592 41.5L52.5352 52.2398L52.3196 52.3196L52.2398 52.5352L41.5 81.5592L30.7602 52.5352L30.6804 52.3196L30.4648 52.2398L1.44077 41.5L30.4648 30.7602L30.6804 30.6804L30.7602 30.4648L41.5 1.44077Z" stroke="#202027"/>
             </svg>
+            <svg class="top__background-star" width="160" height="155" viewBox="0 0 160 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M164.226 10.1084C167.072 10.8901 246.284 43.9262 246.284 43.9262L162.242 52.8254L215.335 120.072L140.485 74.1373L132.858 151.995L111.761 70.0034L41.4419 109.004L89.8822 51.7587L3.91711 47.8942L84.7193 23.992L24.6779 -44.2245L109.09 -5.05042L128.408 -80.6362L137.083 -4.88821L213.973 -57.1361L164.226 10.1084Z" fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round"/>
+                </svg>
+                
             <svg class="top__background-superstar" width="587" height="798" viewBox="0 0 587 798" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M241.793 -10L318 78.3799L1 153" stroke="#202027" stroke-linecap="round"/>
                 <path d="M708.682 48.4063C718.111 51.0311 980.516 161.965 980.516 161.965L702.111 191.848L877.994 417.661L630.036 263.413L604.772 524.856L534.884 249.531L301.938 380.493L462.405 188.266L177.63 175.289L445.303 95.0268L246.404 -134.041L526.036 -2.49627L590.031 -256.31L618.768 -1.95158L873.48 -177.398L708.682 48.4063Z" fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -34,7 +39,7 @@
                 </svg>                 
          </div>
         <h1 class="top__heading">Добро пожаловать <br>на мой сайт мини-игр</h1>
-        <p class="top__description">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай «Поехали!» и приступай.</p>
+        <p class="top__description">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
         <form class="top__form" action="#about-games">
             <input class="top__button" type="submit" value="Поехали!" />
         </form>
@@ -54,48 +59,42 @@
         <h2 class="about__heading">Об играх</h2>
         <p class="about__description">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
         <div class="about__items">
-            <div class="about__item about__item_1">
-                <a class="about__link" href="#">
-                    <img class="about__img" src="img/game1.png" alt="Угадай число">
+            <a class="about__link about__link_1" href="#">
+                <div class="about__item about__item_1">
                     <p class="about__label" >Игра № 1</p>
                     <h3 class="about__item-name">Угадай число</h3>
-                </a>
-            </div>
-            <div class="about__item about__item_2">
-                <a class="about__link" href="#">
-                    <img class="about__img" src="img/game2.png" alt="Простая арифметика">
+                </div>
+            </a>
+            <a class="about__link about__link_2" href="#">
+                <div class="about__item about__item_2">
                     <p class="about__label" >Игра № 2</p>
                     <h3 class="about__item-name">Простая арифметика</h3>
-                </a>
-            </div>
-            <div class="about__item about__item_3">
-                <a class="about__link" href="#">
-                    <img class="about__img" src="img/game3.png" alt="Переверни текст">
+                </div>
+            </a>
+            <a class="about__link about__link_3" href="#">
+                <div class="about__item about__item_3">
                     <p class="about__label" >Игра № 3</p>
                     <h3 class="about__item-name">Переверни текст</h3>
-                </a>
-            </div>
-            <div class="about__item about__item_4">
-                <a class="about__link" href="#">
-                    <img class="about__img" src="img/game4.png" alt="Камень, ножницы, бумага">
+                </div>
+            </a>
+            <a class="about__link about__link_4" href="#">
+                <div class="about__item about__item_4">
                     <p class="about__label" >Игра № 4</p>
                     <h3 class="about__item-name">Камень, ножницы, бумага</h3>
-                </a>
-            </div>
-            <div class="about__item about__item_5">
-                <a class="about__link" href="#">
-                    <img class="about__img" src="img/game5.png" alt="Простая викторина">
+                </div>
+            </a>
+            <a class="about__link about__link_5" href="#">
+                <div class="about__item about__item_5">
                     <p class="about__label" >Игра № 5</p>
                     <h3 class="about__item-name">Простая викторина</h3>
-                </a>
-            </div>
-            <div class="about__item about__item_6">
-                <a class="about__link" href="#">
-                    <img class="about__img" src="img/game6.png" alt="Генератор случайных цветов">
+                </div>
+            </a>
+            <a class="about__link about__link_6" href="#">
+                <div class="about__item about__item_6">
                     <p class="about__label" >Игра № 6</p>
                     <h3 class="about__item-name">Генератор случайных цветов</h3>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </section>
     <footer class="footer">
