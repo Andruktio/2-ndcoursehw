@@ -1,5 +1,4 @@
 .top{
-    overflow-x: hidden;
     position: relative;
     height: 800px;
     background-color: $glight;
@@ -9,52 +8,26 @@
         &-small-star1{
             position: absolute;
             top: 94px;
-            left: 63px;
+            left: 4%;
         }
         &-small-star2{
             position: absolute;
             top: 69px;
-            left: 156px;
+            left: 10%;
         }
         &-small-star3{
             position: absolute;
             top: 538px;
-            left: 948px;
+            left: 65%;
         }
         &-small-star4{
             position: absolute;
             top: 568px;
-            left: 1013px;
+            left: 70%;
         }
-        &-big-star{
+        &-superstar{
             position: absolute;
-            bottom: 278px;
-            left: 1025px;
-        }
-        &-border1{
-            position: absolute;
-            bottom: 650px;
-            left: 854px;
-        }
-        &-border2{
-            position: absolute;
-            top: 254px;
-            left: 1067px;
-        }
-        &-border3{
-            position: absolute;
-            top: 379px;
-            left: 1225px;
-        }
-        &-border4{
-            position: absolute;
-            top: 663px;
-            left: 1345px;
-        }
-        &-triangle{
-            position: absolute;
-            top: 468px;
-            left: 1247px;
+            right: 0%;
         }
     }
     &__heading {

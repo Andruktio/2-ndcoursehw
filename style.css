@@ -21,7 +21,6 @@ a {
 }
 
 .top {
-  overflow-x: hidden;
   position: relative;
   height: 800px;
   background-color: #E1FF8F;
@@ -31,52 +30,26 @@ a {
 .top__background-small-star1 {
   position: absolute;
   top: 94px;
-  left: 63px;
+  left: 4%;
 }
 .top__background-small-star2 {
   position: absolute;
   top: 69px;
-  left: 156px;
+  left: 10%;
 }
 .top__background-small-star3 {
   position: absolute;
   top: 538px;
-  left: 948px;
+  left: 65%;
 }
 .top__background-small-star4 {
   position: absolute;
   top: 568px;
-  left: 1013px;
+  left: 70%;
 }
-.top__background-big-star {
+.top__background-superstar {
   position: absolute;
-  bottom: 278px;
-  left: 1025px;
-}
-.top__background-border1 {
-  position: absolute;
-  bottom: 650px;
-  left: 854px;
-}
-.top__background-border2 {
-  position: absolute;
-  top: 254px;
-  left: 1067px;
-}
-.top__background-border3 {
-  position: absolute;
-  top: 379px;
-  left: 1225px;
-}
-.top__background-border4 {
-  position: absolute;
-  top: 663px;
-  left: 1345px;
-}
-.top__background-triangle {
-  position: absolute;
-  top: 468px;
-  left: 1247px;
+  right: 0%;
 }
 .top__heading {
   z-index: 1;
@@ -134,8 +107,8 @@ a {
 }
 .about__background-star {
   position: absolute;
-  top: 77px;
-  left: 993px;
+  right: 0%;
+  top: 5%;
   z-index: 0;
 }
 .about__background-smalstar1 {
