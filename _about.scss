@@ -1,5 +1,4 @@
 .about{
-    overflow-x: hidden;
     position: relative;
     background-color: $dark;
     padding-left: calc(50% - 600px);
@@ -50,13 +49,13 @@
         column-gap: 32px;
         grid-template-columns: repeat(12,1fr);
     }
-    &__item{
-        z-index: 1;
+    &__link{
         grid-column: span 4;
+        transition: transform .2s;
+        z-index: 1;
         background: $light;
         border-radius: 30px;
-        height: 473px;
-        transition: transform .2s;
+        height: 473px; 
         &:nth-child(2n){
             height: 512px;
         }
@@ -66,14 +65,35 @@
         &:hover{
             transform: scale(1.1);
         }
-    }
-    &__img{
-        height: 314px;
+        &_1{
+            background-image: url(img/game1.png);
+            background-repeat: no-repeat;
+        }
+        &_2{
+            background-image: url(img/game2.png);
+            background-repeat: no-repeat;
+        }
+        &_3{
+            background-image: url(img/game3.png);
+            background-repeat: no-repeat;
+        }
+        &_4{
+            background-image: url(img/game4.png);
+            background-repeat: no-repeat;
+        }
+        &_5{
+            background-image: url(img/game5.png);
+            background-repeat: no-repeat;
+        }
+        &_6{
+            background-image: url(img/game6.png);
+            background-repeat: no-repeat;
+        }
     }
     &__label{
         margin-left: 32px;
         margin-right: 32px;
-        margin-top: 32px;
+        margin-top: 346px;
         width: 108px;
         border-radius: 52.58px;
         background: rgb(247, 247, 247);
