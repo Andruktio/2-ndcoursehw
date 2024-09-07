@@ -1,0 +1,92 @@
+.games{
+    position: relative;
+    background-color: $dark;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    &__background{
+        z-index: 0;
+        &-star1{
+            position: absolute;
+            right: 9%;
+            top: 93px;
+        }
+        &-star2{
+            position: absolute;
+            right: 3%;
+            top: 126px;
+        }
+        &-star3{
+            position: absolute;
+            right: 9%;
+            bottom: 45px;
+        }
+        &-star4{
+            position: absolute;
+            right: 3%;
+            bottom: 65px;
+        }
+    }
+    &__heading{
+        padding-top: 46px;
+        padding-bottom: 40px;
+    }
+    &__items{
+        padding-bottom: 144px;
+    }
+    &__item{
+        display: flex;
+        margin-top: 32px;
+        max-width: 1200px;
+        height: 500px;
+        background-color: $light;
+        border-radius: 30px;
+        &:nth-child(2n-1){
+            flex-direction: row;
+        }
+        &:nth-child(2n){
+            flex-direction: row-reverse;
+        }
+        &-content{
+            max-width: 600px;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+        &-name{
+            padding-top: 48px;
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            text-align: left;
+        }
+        &-description{
+            padding-top: 24px;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+        }
+        &-form{
+            padding-top: 36px;
+        }
+        &-button{
+            width: 247px;
+            height: 66px;
+            box-sizing: border-box;
+            border: 1px solid $dark;
+            border-radius: 60px;
+            background: $dark;
+            color: $light;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            &:hover{
+                background: $light;
+                color: $dark;
+            }
+        }
+    }
+
+}

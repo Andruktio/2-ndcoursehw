@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="hw-2.js"></script>
+    <!-- Скрипты из дз -->
+    <!-- <script src="hw-2.js"></script> -->
+     <script src="hw-3.js"></script>
     <section class="top">
          <div class="top__background">
             <svg class="top__background-small-star1" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,42 +61,133 @@
         <h2 class="about__heading">Об играх</h2>
         <p class="about__description">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
         <div class="about__items">
-            <a class="about__link about__link_1" href="#">
+            <a class="about__link about__link_1" href="#number">
                 <div class="about__item about__item_1">
                     <p class="about__label" >Игра № 1</p>
                     <h3 class="about__item-name">Угадай число</h3>
                 </div>
             </a>
-            <a class="about__link about__link_2" href="#">
+            <a class="about__link about__link_2" href="#arithmetic">
                 <div class="about__item about__item_2">
                     <p class="about__label" >Игра № 2</p>
                     <h3 class="about__item-name">Простая арифметика</h3>
                 </div>
             </a>
-            <a class="about__link about__link_3" href="#">
+            <a class="about__link about__link_3" href="#text">
                 <div class="about__item about__item_3">
                     <p class="about__label" >Игра № 3</p>
                     <h3 class="about__item-name">Переверни текст</h3>
                 </div>
             </a>
-            <a class="about__link about__link_4" href="#">
+            <a class="about__link about__link_4" href="#rps">
                 <div class="about__item about__item_4">
                     <p class="about__label" >Игра № 4</p>
                     <h3 class="about__item-name">Камень, ножницы, бумага</h3>
                 </div>
             </a>
-            <a class="about__link about__link_5" href="#">
+            <a class="about__link about__link_5" href="#quiz">
                 <div class="about__item about__item_5">
                     <p class="about__label" >Игра № 5</p>
                     <h3 class="about__item-name">Простая викторина</h3>
                 </div>
             </a>
-            <a class="about__link about__link_6" href="#">
+            <a class="about__link about__link_6" href="#generator">
                 <div class="about__item about__item_6">
                     <p class="about__label" >Игра № 6</p>
                     <h3 class="about__item-name">Генератор случайных цветов</h3>
                 </div>
             </a>
+        </div>
+    </section>
+    <section class="games">
+        <div class="games__background">
+            <svg class="games__background-star1" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5959 1.5971L22.4149 13.5957L22.4675 13.8195L22.6716 13.9252L33.6151 19.5956L21.6165 22.4146L21.3927 22.4671L21.2869 22.6713L15.6166 33.6148L12.7976 21.6162L12.745 21.3924L12.5409 21.2866L1.5974 15.6163L13.596 12.7973L13.8198 12.7447L13.9256 12.5406L19.5959 1.5971Z" stroke="#BCEC30"/>
+            </svg>
+            <svg class="games__background-star2" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M37.6757 1.70276L44.2009 26.2974L44.2599 26.5196L44.467 26.6195L67.3851 37.6756L42.7904 44.2008L42.5682 44.2598L42.4683 44.4669L31.4122 67.385L24.887 42.7903L24.828 42.5681L24.621 42.4682L1.70287 31.4121L26.2975 24.8869L26.5197 24.8279L26.6196 24.6209L37.6757 1.70276Z" stroke="#BCEC30"/>
+            </svg> 
+            <svg class="games__background-star3" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.5 1.44077L25.5679 15.1367L25.6477 15.3523L25.8633 15.4321L39.5592 20.5L25.8633 25.5679L25.6477 25.6477L25.5679 25.8633L20.5 39.5592L15.4321 25.8633L15.3523 25.6477L15.1367 25.5679L1.44077 20.5L15.1367 15.4321L15.3523 15.3523L15.4321 15.1367L20.5 1.44077Z" stroke="#BCEC30"/>
+            </svg>
+            <svg class="games__background-star4" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.5 1.44077L43.3492 25.3554L43.429 25.571L43.6446 25.6508L67.5592 34.5L43.6446 43.3492L43.429 43.429L43.3492 43.6446L34.5 67.5592L25.6508 43.6446L25.571 43.429L25.3554 43.3492L1.44077 34.5L25.3554 25.6508L25.571 25.571L25.6508 25.3554L34.5 1.44077Z" stroke="#BCEC30"/>
+            </svg>    
+        </div>
+        <h2 class="games__heading">Мини-игры</h2>
+        <div class="games__items">
+            <div class="games__item" id="number">
+                <div class="games__item-content">
+                    <h3 class="games__item-name">Угадай число</h3>
+                    <p class="games__item-description">Попробуй угадать случайное число от 1 до 100.</p>
+                    <form class="games__item-form" action="#">
+                        <input class="games__item-button" type="submit" value="Играть!" />
+                    </form>
+                </div>
+                <div class="games__item-img">
+                    <img src="img/number-big.png" alt="number">
+                </div>
+            </div>
+            <div class="games__item" id="arithmetic">
+                <div class="games__item-content">
+                    <h3 class="games__item-name">Простая арифметика</h3>
+                    <p class="games__item-description">Попробуй решить простые арифметические задачи.</p>
+                    <form class="games__item-form" action="#">
+                        <input class="games__item-button" type="submit" value="Играть!" />
+                    </form>
+                </div>
+                <div class="games__item-img">
+                    <img src="img/arithmetic-big.png" alt="number">
+                </div>
+            </div>
+            <div class="games__item" id="text">
+                <div class="games__item-content">
+                    <h3 class="games__item-name">Переверни текст</h3>
+                    <p class="games__item-description">Попробуй ввести текст, который будет перевернут.</p>
+                    <form class="games__item-form" action="#">
+                        <input class="games__item-button" type="submit" value="Играть!" />
+                    </form>
+                </div>
+                <div class="games__item-img">
+                    <img src="img/text-big.png" alt="number">
+                </div>
+            </div>
+            <div class="games__item" id="quiz">
+                <div class="games__item-content">
+                    <h3 class="games__item-name">Викторина</h3>
+                    <p class="games__item-description">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <form class="games__item-form" action="#">
+                        <input class="games__item-button" type="submit" value="Играть!" />
+                    </form>
+                </div>
+                <div class="games__item-img">
+                    <img src="img/quiz-big.png" alt="number">
+                </div>
+            </div>
+            <div class="games__item" id="rps">
+                <div class="games__item-content">
+                    <h3 class="games__item-name">Камень, ножницы, бумага</h3>
+                    <p class="games__item-description">Сыграй в популярную игру против компьютера.</p>
+                    <form class="games__item-form" action="#">
+                        <input class="games__item-button" type="submit" value="Играть!" />
+                    </form>
+                </div>
+                <div class="games__item-img">
+                    <img src="img/rps-big.png" alt="number">
+                </div>
+            </div>
+            <div class="games__item" id="generator">
+                <div class="games__item-content">
+                    <h3 class="games__item-name">Генератор случайных цветов</h3>
+                    <p class="games__item-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <form class="games__item-form" action="#">
+                        <input class="games__item-button" type="submit" value="Играть!" />
+                    </form>
+                </div>
+                <div class="games__item-img">
+                    <img src="img/generator-big.png" alt="number">
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">

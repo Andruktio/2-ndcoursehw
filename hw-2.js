@@ -37,8 +37,8 @@ num -= 1;
 alert(num);
 
 /* Задание 8 */
-let age=prompt('Сколько вам лет?')
-alert(`Вам ${age} лет`)
+let age=prompt('Сколько вам лет?');
+alert(`Вам ${age} лет`);
 
 /* Задание 9 */
 const user={
@@ -48,5 +48,5 @@ const user={
 }
 
 /* Задание 10 */
-let yourName=prompt('Как тебя зовут?')
-alert(`Привет, ${yourName}!`)
+let yourName=prompt('Как тебя зовут?');
+alert(`Привет, ${yourName}!`);
