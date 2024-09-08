@@ -34,36 +34,36 @@
             z-index: 1;
             background: $light;
             border-radius: 30px;
-            height: 473px;
+            height: 500px;
             max-width: 373px; 
             &:nth-child(2n){
-                height: 473px;
+                height: 500px;
             }
             &:nth-child(5n){
                 margin-top: 0px;;
             }
             &_1{
-                background-image: url(img/game1.png);
+                background-image: url(img/number.png);
                 background-repeat: no-repeat;
             }
             &_2{
-                background-image: url(img/game2.png);
+                background-image: url(img/arithmetic.png);
                 background-repeat: no-repeat;
             }
             &_3{
-                background-image: url(img/game3.png);
+                background-image: url(img/text.png);
                 background-repeat: no-repeat;
             }
             &_4{
-                background-image: url(img/game4.png);
+                background-image: url(img/rps.png);
                 background-repeat: no-repeat;
             }
             &_5{
-                background-image: url(img/game5.png);
+                background-image: url(img/quiz.png);
                 background-repeat: no-repeat;
             }
             &_6{
-                background-image: url(img/game6.png);
+                background-image: url(img/generator.png);
                 background-repeat: no-repeat;
             }
         }

@@ -9,6 +9,14 @@ $light:#FFFFFF;
 a {
     text-decoration: none;
 }
+h2 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    color: $light;
+}
 .footer{
     height: 150px;
     background: $gdark;
@@ -23,4 +31,4 @@ a {
     }
 }
 @import 'top', 'about', 
-'tablet','mobile'
+'tablet','mobile', 'games'
