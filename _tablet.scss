@@ -68,4 +68,31 @@
             }
         }
     }
+    .games{
+        padding-left: 24px;
+        padding-right: 24px;
+        &__heading{
+            padding-top: 48px;
+            padding-bottom: 24px;
+            font-size: 40px;
+        }
+        &__items{
+            padding-bottom: 48px;
+        }
+        &__item{
+            max-width: 768px;
+            &-content{
+                padding-left: 29px;
+                padding-right: 29px;
+                padding-top: 29px;
+                padding-bottom: 32px;
+            }
+            &:nth-child(2n-1){
+                flex-direction: column-reverse;
+            }
+            &:nth-child(2n){
+                flex-direction: column-reverse;
+            }
+        }
+    }
 }

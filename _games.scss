@@ -37,7 +37,6 @@
         display: flex;
         margin-top: 32px;
         max-width: 1200px;
-        height: 500px;
         background-color: $light;
         border-radius: 30px;
         &:nth-child(2n-1){
@@ -69,23 +68,6 @@
         }
         &-form{
             padding-top: 36px;
-        }
-        &-button{
-            width: 247px;
-            height: 66px;
-            box-sizing: border-box;
-            border: 1px solid $dark;
-            border-radius: 60px;
-            background: $dark;
-            color: $light;
-            font-family: Montserrat;
-            font-size: 24px;
-            font-weight: 600;
-            text-align: center;
-            &:hover{
-                background: $light;
-                color: $dark;
-            }
         }
     }
 
