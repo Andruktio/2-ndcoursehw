@@ -49,10 +49,10 @@ ageCheck(Number(prompt('Сколько Вам лет?')));
 
 /* Задание 5 */
 let numberCorrect = (a,b) =>{
-    if (isNaN(a)== false & isNaN(b)== false){
-        console.log(a*b);
-    } else {
+    if (isNaN(a) || isNaN(b)){
         console.log ('Одно или оба значения не являются числом');
+    } else {
+        console.log(a*b);
     }
 }
 /*  Для проверки, смотрим как isNan преобразует логические типы данных */
@@ -64,7 +64,7 @@ numberCorrect(2, false);
 /* Задание 6 */
 let userNumber = prompt('Введите число'); /* Сначала сделал запрос числа внутри функции, но от 0 до 10 в ручную проверять лениво */
 let numberCheck = (a) => {
-    if (isNaN(a) == true){
+    if (isNaN(a)){
         alert('Переданный параметр не является числом');
     } else {
         alert(`${a} в кубе равняется ${a**3}`);
