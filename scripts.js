@@ -75,3 +75,53 @@ function arithmetic() {
     }
 
 }
+
+function textFlip(){
+    let userText = prompt('Введи текст, а я его переверну');
+    alert(`Вот, что у меня получилось:\n${userText.split('').reverse().join('')}`);
+}
+
+function quizGame(){
+    const quiz = [
+        {
+            question: "Какой цвет неба?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+    let scores = 0;
+    alert ('Сейчас я задам 3 простых вопроса с вариантами ответов, выбери правильный!')
+    for (let i = 0; i< quiz.length; i++){
+        let answerFromUser = prompt(`Вопрос: ${quiz[i].question}\nВарианты ответов:\n${quiz[i].options.join("\n")}`);
+        for (let j = 0; j < quiz[i].options.length; j++){
+            if (quiz[i].options[j].toLowerCase().includes(answerFromUser.toLowerCase()) == true){
+                answerFromUser = quiz[i].options[j][0];
+            }
+        }
+        if (Number(answerFromUser) === quiz[i].correctAnswer){
+            scores += 1;
+        }
+    }
+    switch (true) {
+        case scores === quiz.length:
+            alert (`Молодец! Ты верно ответил на ${scores} из ${quiz.length} вопросов!`)
+            break;
+        case scores <= quiz.length && scores != 0:
+            alert (`Ты верно ответил на ${scores} из ${quiz.length} вопросов!`)
+            break;
+        default:
+            alert (`Увы, но ты верно ответил на ${scores} из ${quiz.length} вопросов!`)
+            break;
+    }
+
+}
