@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Задание 1 -->
+    <div class="taskfirst">
+        <h1 class="taskfirst__header">Lorem, ipsum dolor.</h1>
+        <button class="taskfirst__btn">Скрыть</button>
+        <script>
+            const headerFirst = document.querySelector('.taskfirst__header');
+            const btnFirst = document.querySelector('.taskfirst__btn');
+            btnFirst.addEventListener('click', () =>{
+                if (headerFirst.classList.contains('hide')){ /* про .contains в лекциях не говорят, либо я упустил, но интернет все знает*/
+                    headerFirst.classList.remove('hide');
+                } else {
+                    headerFirst.classList.add('hide');
+                }
+            });
+        </script>
+    </div>
+    <!-- Задание 2 -->
+    <div class="tasksecond">
+        <p class="tasksecond__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, tempora!</p>
+        <button class="tasksecond__btn">Изменить цвет</button>
+        <script>
+            const textSecond = document.querySelector('.tasksecond__text');
+            const btnSecond = document.querySelector('.tasksecond__btn');
+            btnSecond.addEventListener('click', () =>{
+                textSecond.style.color = 'blue';
+            });
+        </script>
+    </div>
+    <!-- Задание 3 -->
+    <div class="taskThird">
+        <h1 class="taskThird__header">Lorem, ipsum dolor.</h1>
+        <button class="taskThird__btn">Изменить заголовок</button>
+        <script>
+            const headerThird = document.querySelector('.taskThird__header');
+            const btnThird = document.querySelector('.taskThird__btn');
+            btnThird.addEventListener('click', () =>{
+                headerThird.textContent = 'Привет, мир!'
+            });
+        </script>
+    </div>
+    <!-- Задание 4 -->
+    <div class="taskFourth">
+        <h1 class="taskFourth__header">Changing the description</h1>
+        <h2 class="discription">This is a discription</h2>
+        <span class="discription">This is a discription</span>
+        <p class="discription">This is a discription</p>
+        <h2 class="notDescription">This is not a discription</h2>
+        <span class="notDescription">This is not a discription</span>
+        <p class="notDescription">This is not a discription</p>
+        <button class="taskFourth__btn">Changing the description</button>
+        <script>
+            const textFourth = document.querySelectorAll('.discription');
+            const btnFourth = document.querySelector('.taskFourth__btn');
+            btnFourth.addEventListener('click', () =>{
+                textFourth.forEach(description => {
+                description.textContent = 'Измененный текст';
+                })
+            })
+        </script>
+    </div>
+    <!-- Задание 5 -->
+    <div class="taskFifth">
+        <h1 class="taskFifth__header">Changing the description</h1>
+        <p class="discription">Lorem ipsum dolor sit amet.</p>
+        <p class="discription">Lorem ipsum dolor sit amet.</p>
+        <p class="notDiscription">Lorem ipsum dolor sit amet.</p>
+        <p class="notDiscription">Lorem ipsum dolor sit amet.</p>
+        <button class="taskFifth__btn">Changing the description</button>
+        <script>
+            const textFifth = document.querySelectorAll('.discription');
+            const btnFifth = document.querySelector('.taskFifth__btn');
+            btnFifth.addEventListener('click', () =>{
+                textFifth.forEach(description => {
+                description.textContent = 'Новый текст';
+                })
+            })
+        </script>
+    </div>
+    <!-- Задание 6 -->
+    <div class="taskSixth">
+        <h1 class="taskSixth__header">New element</h1>
+        <button class="taskSixth_btn">New element</button>
+        <script>
+            const btnSixth = document.querySelector('.taskSixth_btn');
+            btnSixth.addEventListener('click',() => {
+                const newElement = document.createElement('p');
+                newElement.textContent = 'Новый абзац';
+                document.body.appendChild(newElement);
+            })
+        </script>
+    </div> 
+    <!-- Задание 7 -->
+    <div class="taskSeventh">
+        <h1 class="taskSeventh__header">Removal the description</h1>
+        <p class="notDiscriptions">This is not a discriptions</p>
+        <p class="discriptions">This is a discriptions</p>
+        <p class="discriptions">This is a discriptions</p>
+        <p class="notDiscriptions">This is not a discriptions</p>
+        <button class="taskSeventh__btn">Changing the descriptions</button>
+        <script>
+            const textSeventh = document.querySelector('.discriptions');
+            const btnSeventh = document.querySelector('.taskSeventh__btn');
+            btnSeventh.addEventListener('click', () =>{
+                if (textSeventh){
+                    textSeventh.remove();
+                }
+            })
+        </script>
+    </div> 
+</body>
+</html>
