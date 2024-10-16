@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <section class="top">
          <div class="top__background">
             <svg class="top__background-small-star1" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,6 +44,7 @@
         <form class="top__form top__form_mobile" action="#games">
             <input class="top__button button" type="submit" value="Поехали!" />
         </form>
+        <img src="img/stripe.jpg" alt="stripe" class="top__stripe">
     </section>
     <section class="about" id="about-games">
         <div class="about__background">
@@ -170,7 +171,7 @@
                     <h3 class="games__item-name">Генератор случайных цветов</h3>
                     <p class="games__item-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
                     <form class="games__item-form" action="#generator">
-                        <input class="games__item-button button" type="submit" value="Играть!" />
+                        <input onclick="changeColor()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>
                 </div>
                 <img class="games__item-img" src="img/generator-big.png" alt="generator">
@@ -188,7 +189,7 @@
     <!-- <script src="hw-5.js"></script> -->
     <!-- <script src="hw-6.js"></script> -->
     <!-- <script src="hw-7.js"></script> -->
-     <script src="hw-8.js"></script>
+    <!-- <script src="hw-8.js"></script> -->
 
 </body>
 </html>
