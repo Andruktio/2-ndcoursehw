@@ -1,5 +1,6 @@
 .top{
     position: relative;
+    overflow-x: hidden; 
     height: 800px;
     background-color: $glight;
     padding-left: calc(50% - 600px);
@@ -60,5 +61,20 @@
         &_mobile{
             display: none;
         }
+    }
+    &__stripe{
+        position: absolute;
+        height: 90px;
+        bottom: 0%;
+        left: 0%;
+        animation: scroll 20s linear infinite;
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }

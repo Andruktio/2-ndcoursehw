@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   width: 247px;
   height: 66px;
@@ -49,6 +53,7 @@ h2 {
 
 .top {
   position: relative;
+  overflow-x: hidden;
   height: 800px;
   background-color: #E1FF8F;
   padding-left: calc(50% - 600px);
@@ -109,7 +114,22 @@ h2 {
 .top__form_mobile {
   display: none;
 }
+.top__stripe {
+  position: absolute;
+  height: 90px;
+  bottom: 0%;
+  left: 0%;
+  animation: scroll 20s linear infinite;
+}
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .about {
   position: relative;
   background-color: #202027;
@@ -461,6 +481,9 @@ h2 {
   .top__button {
     margin-left: calc(50% - 142.5px);
     margin-right: calc(50% - 142.5px);
+  }
+  .top__stripe {
+    height: 52px;
   }
   .about {
     display: none;

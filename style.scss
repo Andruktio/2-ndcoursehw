@@ -9,6 +9,9 @@ $light:#FFFFFF;
 a {
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .button{
     width: 247px;
     height: 66px;
