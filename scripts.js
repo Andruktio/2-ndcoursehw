@@ -125,3 +125,27 @@ function quizGame(){
     }
 
 }
+
+function rockPaperScissors() {
+    const items = ['ножницы','камень','бумага'];/* Элементы располагаются так, что элемент справа от выбранного побеждает элемент слева
+    для первого элемента массива "более левым" будет последний элемент массива, соответственного для последнего элемента первый будет "более правым"*/
+    let computerItemId = Math.floor(Math.random()*items.length);
+    let userItem = (prompt('Выбери один из вариантов: камень, ножницы или бумага')).toLowerCase();
+    let userItemId = items.indexOf(userItem);
+    while (userItemId === -1){
+        userItem = (prompt('Что-то пошло не так, попробуй еще раз\nВыбери один из вариантов: камень, ножницы или бумага')).toLowerCase();
+        userItemId = items.indexOf(userItem);
+    }
+    switch (true) {
+        case userItemId === computerItemId:
+            alert(`Мой вариант: ${items[computerItemId]},\nТвой вариант: ${userItem},\nУ нас ничья!`)
+            break;
+        case (userItemId < computerItemId && computerItemId != (items.length - 1)) || (computerItemId == (items.length - 1) && userItemId != 0) || (userItemId == (items.length - 1) && computerItemId == 0):
+            alert(`Мой вариант: ${items[computerItemId]},\nТвой вариант: ${userItem},\nЯ победил, спасибо за игру!`)
+            break;
+        case (userItemId > computerItemId && userItemId != (items.length - 1)) || (userItemId == (items.length - 1) && computerItemId != 0) || (computerItemId == (items.length - 1) && userItemId == 0):
+            alert(`Мой вариант: ${items[computerItemId]},\nТвой вариант: ${userItem},\nТы победил, молодец!`)
+        default:
+            break;
+    }
+}
