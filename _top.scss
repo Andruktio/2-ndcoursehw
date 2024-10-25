@@ -1,5 +1,6 @@
 .top{
     position: relative;
+    overflow-x: hidden; 
     height: 800px;
     background-color: $glight;
     padding-left: calc(50% - 600px);
@@ -8,12 +9,12 @@
         &-small-star1{
             position: absolute;
             top: 94px;
-            left: 4%;
+            left: 63px;
         }
         &-small-star2{
             position: absolute;
             top: 69px;
-            left: 10%;
+            left: 156px;
         }
         &-small-star3{
             position: absolute;
@@ -54,11 +55,58 @@
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
+        &_mobile{
+            display: none;
+        }
     }
     &__form{
         padding-top: 48px;
         &_mobile{
             display: none;
         }
+    }
+    &__placestripe{
+        overflow: hidden;
+        width: 220%;
+        height: 90px;
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        background-color: $gdark;
+    }
+    &__stripe{
+        display: flex;
+        column-gap: 138px;
+        list-style: none;
+        margin-top: 27px;
+        animation: scroll 10s linear infinite;
+    }
+    &__stripeitem{
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute; 
+            float: right;
+            left: -87px;
+            background-image: url(img/Star.svg);
+            background-repeat: no-repeat;
+            width: 36px;
+            height: 36px;
+        }
+
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
