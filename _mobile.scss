@@ -50,11 +50,15 @@
             text-align: center;
         }
         &__description{
-            font-family: Montserrat;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19.5px;
-            text-align: center;
+            display: none;
+            &_mobile{
+                display: block;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.5px;
+                text-align: center;
+            }
         }
         &__form{
             display: none;
@@ -67,8 +71,29 @@
             margin-left: calc(50% - 142.5px);
             margin-right: calc(50% - 142.5px);
         }
+        &__placestripe{
+            height: 51px;
+            width: 450%;
+        }
         &__stripe{
-            height: 52px;
+            margin-top: 16px;
+            column-gap: 74px;
+        }
+        &__stripeitem{
+            font-size: 16px;
+            font-family: Montserrat;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            text-align: left;
+            &::before{
+                content: "";
+                position: absolute; 
+                float: right; 
+                left: -48px;
+                background-image: url(img/Star_small.svg);
+                background-repeat: no-repeat;
+            }
         }
     }
     .about{
@@ -84,12 +109,18 @@
             padding-top: 48px;
             padding-bottom: 24px;
             font-size: 40px;
+            font-family: Montserrat;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: left;
+
         }
         &__items{
-            padding-bottom: 48px;
+            padding-bottom: 14px;
         }
         &__item{
             max-width: 343px;
+            margin-top: 24px;
             &-content{
                 padding-left: 29px;
                 padding-right: 29px;

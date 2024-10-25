@@ -38,13 +38,23 @@
          </div>
         <h1 class="top__heading">Добро пожаловать <br>на мой сайт мини-игр</h1>
         <p class="top__description">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
+        <p class="top__description top__description_mobile">Тебе предстоит пройти несколько <br> увлекательных игр. Если готов,<br> нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
         <form class="top__form" action="#about-games">
             <input class="top__button button" type="submit" value="Поехали!" />
         </form>
         <form class="top__form top__form_mobile" action="#games">
             <input class="top__button button" type="submit" value="Поехали!" />
         </form>
-        <img src="img/stripe.jpg" alt="stripe" class="top__stripe">
+        <div class="top__placestripe">
+            <ul class="top__stripe">
+                <li class="top__stripeitem">ВИКТОРИНА</li>
+                <li class="top__stripeitem">УГАДАЙ ЧИСЛО</li>
+                <li class="top__stripeitem">ПЕРЕВЕРНИ ТЕКСТ</li>
+                <li class="top__stripeitem">ПРОСТАЯ АРИФМЕТИКА</li>
+                <li class="top__stripeitem">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</li>
+                <li class="top__stripeitem">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</li>
+            </ul>
+        </div>
     </section>
     <section class="about" id="about-games">
         <div class="about__background">
@@ -82,19 +92,19 @@
             <a class="about__link about__link_4" href="#rps">
                 <div class="about__item about__item_4">
                     <p class="about__label" >Игра № 4</p>
-                    <h3 class="about__item-name">Камень, ножницы, бумага</h3>
+                    <h3 class="about__item-name">Камень,<br> ножницы,<br> бумага</h3>
                 </div>
             </a>
             <a class="about__link about__link_5" href="#quiz">
                 <div class="about__item about__item_5">
                     <p class="about__label" >Игра № 5</p>
-                    <h3 class="about__item-name">Простая викторина</h3>
+                    <h3 class="about__item-name">Простая<br> викторина</h3>
                 </div>
             </a>
             <a class="about__link about__link_6" href="#generator">
                 <div class="about__item about__item_6">
                     <p class="about__label" >Игра № 6</p>
-                    <h3 class="about__item-name">Генератор случайных цветов</h3>
+                    <h3 class="about__item-name">Генератор<br> случайных<br> цветов</h3>
                 </div>
             </a>
         </div>
@@ -119,7 +129,7 @@
             <div class="games__item" id="number">
                 <div class="games__item-content">
                     <h3 class="games__item-name">Угадай число</h3>
-                    <p class="games__item-description">Попробуй угадать случайное число от 1 до 100.</p>
+                    <p class="games__item-description">Попробуй угадать случайное<br> число от 1 до 100.</p>
                     <form class="games__item-form" action="#number">
                         <input onclick="number()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>
@@ -128,8 +138,8 @@
             </div>
             <div class="games__item" id="arithmetic">
                 <div class="games__item-content">
-                    <h3 class="games__item-name">Простая арифметика</h3>
-                    <p class="games__item-description">Попробуй решить простые арифметические задачи.</p>
+                    <h3 class="games__item-name">Простая<br> арифметика</h3>
+                    <p class="games__item-description">Попробуй решить простые<br> арифметические задачи.</p>
                     <form class="games__item-form" action="#arithmetic">
                         <input onclick="arithmetic()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>
@@ -139,7 +149,7 @@
             <div class="games__item" id="text">
                 <div class="games__item-content">
                     <h3 class="games__item-name">Переверни текст</h3>
-                    <p class="games__item-description">Попробуй ввести текст, который будет перевернут.</p>
+                    <p class="games__item-description">Попробуй ввести текст, который<br> будет перевернут.</p>
                     <form class="games__item-form" action="#text">
                         <input onclick="textFlip()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>
@@ -149,7 +159,7 @@
             <div class="games__item" id="quiz">
                 <div class="games__item-content">
                     <h3 class="games__item-name">Викторина</h3>
-                    <p class="games__item-description">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <p class="games__item-description">Отвечай на вопросы викторины<br> с вариантами ответов.</p>
                     <form class="games__item-form" action="#quiz">
                         <input onclick="quizGame()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>
@@ -158,8 +168,8 @@
             </div>
             <div class="games__item" id="rps">
                 <div class="games__item-content">
-                    <h3 class="games__item-name">Камень, ножницы, бумага</h3>
-                    <p class="games__item-description">Сыграй в популярную игру против компьютера.</p>
+                    <h3 class="games__item-name">Камень,<br> ножницы,<br> бумага</h3>
+                    <p class="games__item-description">Сыграй в популярную игру<br> против компьютера.</p>
                     <form class="games__item-form" action="#rps">
                         <input onclick="rockPaperScissors()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>
@@ -168,8 +178,8 @@
             </div>
             <div class="games__item" id="generator">
                 <div class="games__item-content">
-                    <h3 class="games__item-name">Генератор случайных цветов</h3>
-                    <p class="games__item-description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <h3 class="games__item-name">Генератор<br> случайных<br> цветов</h3>
+                    <p class="games__item-description">Игра, в которой при клике на кнопку<br> фон страницы меняется на случайный.</p>
                     <form class="games__item-form" action="#generator">
                         <input onclick="changeColor()" class="games__item-button button" type="submit" value="Играть!" />
                     </form>

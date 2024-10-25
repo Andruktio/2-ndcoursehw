@@ -62,12 +62,12 @@ h2 {
 .top__background-small-star1 {
   position: absolute;
   top: 94px;
-  left: 4%;
+  left: 63px;
 }
 .top__background-small-star2 {
   position: absolute;
   top: 69px;
-  left: 10%;
+  left: 156px;
 }
 .top__background-small-star3 {
   position: absolute;
@@ -108,18 +108,50 @@ h2 {
   letter-spacing: 0px;
   text-align: left;
 }
+.top__description_mobile {
+  display: none;
+}
 .top__form {
   padding-top: 48px;
 }
 .top__form_mobile {
   display: none;
 }
-.top__stripe {
-  position: absolute;
+.top__placestripe {
+  overflow: hidden;
+  width: 220%;
   height: 90px;
-  bottom: 0%;
+  position: absolute;
   left: 0%;
-  animation: scroll 20s linear infinite;
+  bottom: 0%;
+  background-color: #BCEC30;
+}
+.top__stripe {
+  display: flex;
+  -moz-column-gap: 138px;
+       column-gap: 138px;
+  list-style: none;
+  margin-top: 27px;
+  animation: scroll 10s linear infinite;
+}
+.top__stripeitem {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  position: relative;
+}
+.top__stripeitem::before {
+  content: "";
+  position: absolute;
+  float: right;
+  left: -87px;
+  background-image: url(img/Star.svg);
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
 }
 
 @keyframes scroll {
@@ -184,12 +216,6 @@ h2 {
   border-radius: 30px;
   height: 473px;
 }
-.about__link:nth-child(2n) {
-  height: 512px;
-}
-.about__link:nth-child(5n) {
-  margin-top: 39px;
-}
 .about__link:hover {
   transform: scale(1.1);
 }
@@ -200,6 +226,7 @@ h2 {
 .about__link_2 {
   background-image: url(img/arithmetic.png);
   background-repeat: no-repeat;
+  height: 512px;
 }
 .about__link_3 {
   background-image: url(img/text.png);
@@ -208,14 +235,18 @@ h2 {
 .about__link_4 {
   background-image: url(img/rps.png);
   background-repeat: no-repeat;
+  height: 551px;
 }
 .about__link_5 {
   background-image: url(img/quiz.png);
   background-repeat: no-repeat;
+  margin-top: 39px;
+  height: 512px;
 }
 .about__link_6 {
   background-image: url(img/generator.png);
   background-repeat: no-repeat;
+  height: 551px;
 }
 .about__label {
   margin-left: 32px;
@@ -256,22 +287,22 @@ h2 {
 }
 .games__background-star1 {
   position: absolute;
-  right: 9%;
+  right: calc(100vw - 1440px + 124px);
   top: 93px;
 }
 .games__background-star2 {
   position: absolute;
-  right: 3%;
+  right: calc(100vw - 1440px + 45px);
   top: 126px;
 }
 .games__background-star3 {
   position: absolute;
-  right: 9%;
+  right: calc(100vw - 1440px + 150px);
   bottom: 45px;
 }
 .games__background-star4 {
   position: absolute;
-  right: 3%;
+  right: calc(100vw - 1440px + 52px);
   bottom: 65px;
 }
 .games__heading {
@@ -295,7 +326,7 @@ h2 {
   flex-direction: row-reverse;
 }
 .games__item-content {
-  max-width: 600px;
+  width: 600px;
   padding-left: 48px;
   padding-right: 48px;
 }
@@ -465,6 +496,10 @@ h2 {
     text-align: center;
   }
   .top__description {
+    display: none;
+  }
+  .top__description_mobile {
+    display: block;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -482,8 +517,30 @@ h2 {
     margin-left: calc(50% - 142.5px);
     margin-right: calc(50% - 142.5px);
   }
+  .top__placestripe {
+    height: 51px;
+    width: 450%;
+  }
   .top__stripe {
-    height: 52px;
+    margin-top: 16px;
+    -moz-column-gap: 74px;
+         column-gap: 74px;
+  }
+  .top__stripeitem {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  .top__stripeitem::before {
+    content: "";
+    position: absolute;
+    float: right;
+    left: -48px;
+    background-image: url(img/Star_small.svg);
+    background-repeat: no-repeat;
   }
   .about {
     display: none;
@@ -499,12 +556,17 @@ h2 {
     padding-top: 48px;
     padding-bottom: 24px;
     font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: left;
   }
   .games__items {
-    padding-bottom: 48px;
+    padding-bottom: 14px;
   }
   .games__item {
     max-width: 343px;
+    margin-top: 24px;
   }
   .games__item-content {
     padding-left: 29px;

@@ -7,22 +7,22 @@
         z-index: 0;
         &-star1{
             position: absolute;
-            right: 9%;
+            right: calc(100vw - 1440px + 124px);
             top: 93px;
         }
         &-star2{
             position: absolute;
-            right: 3%;
+            right: calc(100vw - 1440px + 45px);
             top: 126px;
         }
         &-star3{
             position: absolute;
-            right: 9%;
+            right: calc(100vw - 1440px + 150px);
             bottom: 45px;
         }
         &-star4{
             position: absolute;
-            right: 3%;
+            right: calc(100vw - 1440px + 52px);
             bottom: 65px;
         }
     }
@@ -46,7 +46,7 @@
             flex-direction: row-reverse;
         }
         &-content{
-            max-width: 600px;
+            width: 600px;
             padding-left: 48px;
             padding-right: 48px;
         }
